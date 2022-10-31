@@ -34,7 +34,7 @@
         <p class="fw-normal mb-1">10-29-2022</p>
       </td>
       <td>
-        <button type="button" class="btn btn-link btn-sm btn-rounded">
+        <button type="button" class="btn btn-link btn-sm btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
           Edit
         </button>
       </td>
@@ -51,7 +51,7 @@
         <p class="fw-normal mb-1">10-29-2022</p>
       </td>
       <td>
-        <button type="button" class="btn btn-link btn-sm btn-rounded">
+        <button type="button" class="btn btn-link btn-sm btn-rounded" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
           Edit
         </button>
       </td>
@@ -59,5 +59,40 @@
   </tbody>
 </table>
 
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Event Detail</h5>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container imgcontainer" >
+        <img src="./asset/portuguese.jpg" width="70%" height="70%"/>
+        </div>
+        <br/>
+        <p class="mt-5 "><span class="text-warning fw-bold" >Event Name:</span> <span >Hiking trip to wenchi</span></p>
+        <p><span class="text-warning fw-bold" >Event Status: </span><span>Approved</span></p>
+        <p><span class="text-warning fw-bold" >Event Description: </span><span>jahfuhualkgkchkuruey4r8iushfcbaikuhelrueyri3wyrl83yhfbajfgauetr</span></p>
+        <p><span class="text-warning fw-bold" >Start Date:</span> <span>10/31/2022</span></p>
+        <p><span class="text-warning fw-bold" >End Date: </span><span>10/31/2022</span></p>
+        <p><span class="text-warning fw-bold" >Start Time: </span><span>10:00 am</span></p>
+        <p><span class="text-warning fw-bold" >End Time: </span><span>04:00 pm</span></p>
+        <p><span class="text-warning fw-bold" >Category: </span><span>Travel</span></p>
+        <p><span class="text-warning fw-bold" >Event Organizer: </span><span>Enqu Hiking</span></p>
+        <p><span class="text-warning fw-bold" >Event Address: </span><span>Wonchi</span></p>
+        <p><span class="text-warning fw-bold" >Event Entrance Fee: </span><span>1000 birr</span></p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Approve</button>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Disapprove</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>

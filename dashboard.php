@@ -67,7 +67,10 @@
     <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#feedback" type="button" role="tab" aria-controls="profile" aria-selected="false">Feedback</button>
   </li>
   <li class="nav-item" role="presentation">
-    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#featuredEvent" type="button" role="tab" aria-controls="contact" aria-selected="false">Featured Events</button>
+    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#gallery" type="button" role="tab" aria-controls="contact" aria-selected="false">Gallery</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#featuredEvent" type="button" role="tab" aria-controls="contact" aria-selected="false">Featured Event</button>
   </li>
  </ul>
       </div>
