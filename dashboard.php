@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Place to be Dashboard</title>
+        <title></title>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,8 +13,8 @@
     
     <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+  <div class="container">
   <a class="navbar-brand" href="#">
       <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
       Place to be Dashboard
@@ -54,338 +54,65 @@
 </nav>
 
 <!--left navigation bar-->
-
-<div class="container bg-warning">
+<div class="row tab-pane tab-content" role="tabpanel" id="event">
+<div class="container ">
 <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
     <div class="position-sticky">
       <div class="list-group list-group-flush mx-3 mt-4">
-        <a
-          href="#"
-          class="list-group-item list-group-item-action py-2 ripple"
-          aria-current="true"
-        >
-          <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Main dashboard</span>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action py-2 ripple ">
-          <i class="fas fa-chart-area fa-fw me-3"></i><span>Events</span>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action py-2 ripple"
-          ><i class="fas fa-lock fa-fw me-3"></i><span>Feedback</span></a
-        >
-        <a href="#" class="list-group-item list-group-item-action py-2 ripple"
-          ><i class="fas fa-chart-line fa-fw me-3"></i><span>Gallery</span></a
-        >
-        <a href="#" class="list-group-item list-group-item-action py-2 ripple">
-          <i class="fas fa-chart-pie fa-fw me-3"></i><span>Featured Events</span>
-        </a>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="event-tab" data-bs-toggle="tab" data-bs-target="#event" type="button" role="tab" aria-controls="event" aria-selected="true">Events</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#feedback" type="button" role="tab" aria-controls="profile" aria-selected="false">Feedback</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#featuredEvent" type="button" role="tab" aria-controls="contact" aria-selected="false">Featured Events</button>
+  </li>
+ </ul>
       </div>
+      
     </div>
   </nav>
 </div>
 
 <!--main activity section -->
-<div class="container">
-<div class="row bg-info" >status counts</div>
-<div class="row ">
-    <div class="col-sm-8 bg-success">
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Events</button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Upcoming</button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
-  </li>
-</ul>
 <div class="tab-content" id="myTabContent">
-    <!-- Events Tab-->
-
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-  <table class="table align-middle mb-0 bg-white">
-  <thead class="bg-light">
-    <tr>
-      <th>Event Name</th>
-      <th>Start Date</th>
-      <th>End Date</th>
-      <th>Status</th>
-      <th>Edit</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <div class="d-flex align-items-center">
-          <div class="ms-3">
-            <p class="fw-bold mb-1">Hiing trip to wenchi</p>
-          </div>
-        </div>
-      </td>
-      <td>
-        <p class="fw-normal mb-1">10-29-2022</p>
-      </td>
-      <td>
-      <p class="fw-normal mb-1">10-30-2022</p>
-      </td>
-      <td>
-      <span class="badge badge-success rounded-pill d-inline">Active</span>
-      <p>Approved</p>
-      </td>
-      <td>
-        <button type="button" class="btn btn-link btn-sm btn-rounded">
-          Edit
-        </button>
-      </td>
-    </tr>
-  
- 
-    <tr>
-      <td>
-        <div class="d-flex align-items-center">
-          <div class="ms-3">
-            <p class="fw-bold mb-1">Hiing trip to wenchi</p>
-          </div>
-        </div>
-      </td>
-      <td>
-        <p class="fw-normal mb-1">10-29-2022</p>
-      </td>
-      <td>
-      <p class="fw-normal mb-1">10-30-2022</p>
-      </td>
-      <td>
-      <span class="badge badge-success rounded-pill d-inline">Active</span>
-      <p>Approved</p>
-      </td>
-      <td>
-        <button type="button" class="btn btn-link btn-sm btn-rounded">
-          Edit
-        </button>
-      </td>
-    </tr>
-   
- 
-    <tr>
-      <td>
-        <div class="d-flex align-items-center">
-          <div class="ms-3">
-            <p class="fw-bold mb-1">Hiing trip to wenchi</p>
-          </div>
-        </div>
-      </td>
-      <td>
-        <p class="fw-normal mb-1">10-29-2022</p>
-      </td>
-      <td>
-      <p class="fw-normal mb-1">10-30-2022</p>
-      </td>
-      <td>
-      <span class="badge badge-success rounded-pill d-inline">Active</span>
-      <p>Approved</p>
-      </td>
-      <td>
-        <button type="button" class="btn btn-link btn-sm btn-rounded">
-          Edit
-        </button>
-      </td>
-    </tr>
-  </tbody>
-</table>
-  </div>
-
-  <!--upcoming event-->
-
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-  <table class="table align-middle mb-0 bg-white">
-  <thead class="bg-light">
-    <tr>
-      <th>Event Name</th>
-      <th>Start Date</th>
-      <th>End Date</th>
-      <th>Status</th>
-      <th>Edit</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <div class="d-flex align-items-center">
-          <div class="ms-3">
-            <p class="fw-bold mb-1">Hiing trip to wenchi</p>
-          </div>
-        </div>
-      </td>
-      <td>
-        <p class="fw-normal mb-1">10-29-2022</p>
-      </td>
-      <td>
-      <p class="fw-normal mb-1">10-30-2022</p>
-      </td>
-      <td>
-      <span class="badge badge-success rounded-pill d-inline">Active</span>
-      <p>Approved</p>
-      </td>
-      <td>
-        <button type="button" class="btn btn-link btn-sm btn-rounded">
-          Edit
-        </button>
-      </td>
-    </tr>
-  
- 
-    <tr>
-      <td>
-        <div class="d-flex align-items-center">
-          <div class="ms-3">
-            <p class="fw-bold mb-1">Hiing trip to wenchi</p>
-          </div>
-        </div>
-      </td>
-      <td>
-        <p class="fw-normal mb-1">10-29-2022</p>
-      </td>
-      <td>
-      <p class="fw-normal mb-1">10-30-2022</p>
-      </td>
-      <td>
-      <span class="badge badge-success rounded-pill d-inline">Active</span>
-      <p>Approved</p>
-      </td>
-      <td>
-        <button type="button" class="btn btn-link btn-sm btn-rounded">
-          Edit
-        </button>
-      </td>
-    </tr>
-  </tbody>
-</table>
-  </div>
-
-  <!--? event-->
-  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-  <table class="table align-middle mb-0 bg-white">
-  <thead class="bg-light">
-    <tr>
-      <th>Event Name</th>
-      <th>Start Date</th>
-      <th>End Date</th>
-      <th>Status</th>
-      <th>Edit</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <div class="d-flex align-items-center">
-          <div class="ms-3">
-            <p class="fw-bold mb-1">Hiing trip to wenchi</p>
-          </div>
-        </div>
-      </td>
-      <td>
-        <p class="fw-normal mb-1">10-29-2022</p>
-      </td>
-      <td>
-      <p class="fw-normal mb-1">10-30-2022</p>
-      </td>
-      <td>
-      <span class="badge badge-success rounded-pill d-inline">Active</span>
-      <p>Approved</p>
-      </td>
-      <td>
-        <button type="button" class="btn btn-link btn-sm btn-rounded">
-          Edit
-        </button>
-      </td>
-    </tr>
-  
- 
-    <tr>
-      <td>
-        <div class="d-flex align-items-center">
-          <div class="ms-3">
-            <p class="fw-bold mb-1">Hiing trip to wenchi</p>
-          </div>
-        </div>
-      </td>
-      <td>
-        <p class="fw-normal mb-1">10-29-2022</p>
-      </td>
-      <td>
-      <p class="fw-normal mb-1">10-30-2022</p>
-      </td>
-      <td>
-      <span class="badge badge-success rounded-pill d-inline">Active</span>
-      <p>Approved</p>
-      </td>
-      <td>
-        <button type="button" class="btn btn-link btn-sm btn-rounded">
-          Edit
-        </button>
-      </td>
-    </tr>
-  </tbody>
-</table>
-  </div>
+<div class="tab-pane fade show active" id="event" role="tabpanel" aria-labelledby="home-tab">
+<div class="container ">
+<div class="row bg-info" >status counts</div>
+<?php 
+include('events.php');
+?>
+<!--events tab-->
 </div>
-</div>
-
-
-<div class="col-sm-4 bg-secondary">
+<!--pending events-->
+<div class="col-sm-4 ">
     <p class="fw-bolder align-middle fs-3">Pending Events</p>
-<table class="table align-middle mb-0 bg-white">
-  <thead class="bg-light">
-    <tr>
-      <th>Event Name</th>
-      <th>Published Date</th>
-      <th>Edit</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <div class="d-flex align-items-center">
-          <div class="ms-3">
-            <p class="fw-bold mb-1">Hiing trip to wenchi</p>
-          </div>
-        </div>
-      </td>
-      <td>
-        <p class="fw-normal mb-1">10-29-2022</p>
-      </td>
-      <td>
-        <button type="button" class="btn btn-link btn-sm btn-rounded">
-          Edit
-        </button>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <div class="d-flex align-items-center">
-          <div class="ms-3">
-            <p class="fw-bold mb-1">Hiing trip to wenchi</p>
-          </div>
-        </div>
-      </td>
-      <td>
-        <p class="fw-normal mb-1">10-29-2022</p>
-      </td>
-      <td>
-        <button type="button" class="btn btn-link btn-sm btn-rounded">
-          Edit
-        </button>
-      </td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
+    <?php 
+include('pendingEvents.php');
+?>
 </div>
 <!-- users-->
-<div class="container-fluid bg-success">
-sfdhgs
+<div class="container ">
+<?php 
+include('users.php');
+?>
+</div>
+</div>
+<!--closing the first event tab-->
+</div>
+
+<!--second feedback -->
+
+<div class="tab-pane fade show active" id="feedback" role="tabpanel" aria-labelledby="home-tab">
+<?php 
+include('feedback.php');
+?>
+<div>
+
+<!--close feedback-->
+<!--the big close for page-->
 </div>
     </body>
 </html>
