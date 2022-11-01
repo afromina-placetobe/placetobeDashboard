@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="/app/assets/css/app.css" type="text/css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="./js/main.js" rel="javascript"></script>
         <link style type="text/css" href="./CSS/index.css" rel="styleSheet"/>
     </head>
     
@@ -16,7 +17,7 @@
     <nav class="navbar navbar-expand-lg navbar-light ">
   <div class="container">
   <a class="navbar-brand" href="#">
-      <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+      <img src="./asset/Favicon.png" alt="logo" width="50px" height="50px" class="d-inline-block align-text-top">
       Place to be Dashboard
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,16 +62,16 @@
       <div class="list-group list-group-flush mx-3 mt-4">
       <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="event-tab" data-bs-toggle="tab" data-bs-target="#event" type="button" role="tab" aria-controls="event" aria-selected="true">Events</button>
+    <button class="nav-link active" id="event-tab" onClick="" data-bs-toggle="tab" data-bs-target="#event" type="button" role="tab" aria-controls="event" aria-selected="false">Events</button>
   </li>
   <li class="nav-item" role="presentation">
-    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#feedback" type="button" role="tab" aria-controls="profile" aria-selected="false">Feedback</button>
+    <button class="nav-link" id="feedback-tab" onClick="" data-bs-toggle="tab" data-bs-target="#feedback" type="button" role="tab" aria-controls="feedback" aria-selected="false">Feedback</button>
   </li>
   <li class="nav-item" role="presentation">
-    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#gallery" type="button" role="tab" aria-controls="contact" aria-selected="false">Gallery</button>
+    <button class="nav-link" id="gallery-tab" data-bs-toggle="tab" data-bs-target="#gallery" type="button" role="tab" aria-controls="gallery" aria-selected="false">Gallery</button>
   </li>
   <li class="nav-item" role="presentation">
-    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#featuredEvent" type="button" role="tab" aria-controls="contact" aria-selected="false">Featured Event</button>
+    <button class="nav-link" id="featuredEvent-tab" data-bs-toggle="tab" data-bs-target="#featuredEvent" type="button" role="tab" aria-controls="featuredEvent" aria-selected="false">Featured Event</button>
   </li>
  </ul>
       </div>
@@ -81,7 +82,13 @@
 
 <!--main activity section -->
 <div class="tab-content" id="myTabContent">
-<div class="tab-pane fade show active" id="event" role="tabpanel" aria-labelledby="home-tab">
+
+
+<!--close feedback-->
+<!--the big close for page-->
+</div >
+<div id="hiddenElementContainer">
+<div class="tab-pane fade show active" id="event" role="tabpanel" aria-labelledby="event-tab">
 <div class="container ">
 <div class="row bg-info" >status counts</div>
 <?php 
@@ -91,7 +98,7 @@ include('events.php');
 </div>
 <!--pending events-->
 <div class="col-sm-4 ">
-    <p class="fw-bolder align-middle fs-3">Pending Events</p>
+    <p class="fw-bolder align-middle fs-3" id ="pending">Pending Events</p>
     <?php 
 include('pendingEvents.php');
 ?>
@@ -108,14 +115,11 @@ include('users.php');
 
 <!--second feedback -->
 
-<div class="tab-pane fade show active" id="feedback" role="tabpanel" aria-labelledby="home-tab">
+<div class="tab-pane fade show active" id="feedback" role="tabpanel" aria-labelledby="feedback-tab" >
 <?php 
 include('feedback.php');
 ?>
 <div>
-
-<!--close feedback-->
-<!--the big close for page-->
 </div>
     </body>
 </html>

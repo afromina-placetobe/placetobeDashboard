@@ -13,12 +13,13 @@
     </head>
     
     <body>
+        <div id="pending">
         <table class="table align-middle mb-0 bg-white">
   <thead class="bg-light">
     <tr>
-      <th>Event Name</th>
-      <th>Published Date</th>
-      <th>Edit</th>
+      <th class="text-warning">Event Name</th>
+      <th class="text-warning">Published Date</th>
+      <th class="text-warning">Edit</th>
     </tr>
   </thead>
   <tbody>
@@ -26,7 +27,7 @@
       <td>
         <div class="d-flex align-items-center">
           <div class="ms-3">
-            <p class="fw-bold mb-1">Hiing trip to wenchi</p>
+            <p class="mb-1">Hiing trip to wenchi</p>
           </div>
         </div>
       </td>
@@ -43,7 +44,7 @@
       <td>
         <div class="d-flex align-items-center">
           <div class="ms-3">
-            <p class="fw-bold mb-1">Hiing trip to wenchi</p>
+            <p class="mb-1">Hiing trip to wenchi</p>
           </div>
         </div>
       </td>
@@ -93,6 +94,7 @@
       </div>
     </div>
   </div>
+</div>
 </div>
 </body>
 </html>

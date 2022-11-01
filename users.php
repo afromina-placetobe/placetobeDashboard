@@ -12,15 +12,17 @@
     </head>
     
     <body>
+        <div id="users"> </div>
+        <p class="fw-bolder align-middle fs-3" >Users</p>
 <table class="table align-middle mb-0 bg-white">
   <thead class="bg-light">
     <tr>
-      <th>Id</th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Username</th>
-      <th>Category</th>
-      <th>Profile</th>
+      <th class="text-warning">Id</th>
+      <th class="text-warning">First Name</th>
+      <th class="text-warning">Last Name</th>
+      <th class="text-warning">Username</th>
+      <th class="text-warning">Category</th>
+      <th class="text-warning">Profile</th>
 
     </tr>
   </thead>

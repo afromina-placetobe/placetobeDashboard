@@ -29,7 +29,7 @@
                 </div>
 
                 <form>
-                  <p>LOGIN</p>
+                  <p>SIGN UP</p>
 
                   <div class="form-outline mb-4">
                     <input type="email" id="form2Example11" class="form-control"
@@ -43,15 +43,13 @@
                   </div>
 
                   <div class="text-center pt-1 mb-4">
-                    <a class="btn btn-primary btn-block outline-none gradient-custom-2 mb-3" type="button">Log
-                      in</a>
+                    <button class="btn btn-primary btn-block  outline-none gradient-custom-2 mb-3 signup-button" type="button">Sign Up</button>
                       <br/>
-                    <a class="text-muted" href="#!">Forgot password?</a>
                   </div>
 
                   <div class="d-flex align-items-center justify-content-center pb-4">
-                    <p class="mb-0 me-2">Don't have an account?</p>
-                    <a type="button" class="btn btn-outline-warning" href="signup.php">Create new</a>
+                  <p class="mb-0 me-2">Have an account?</p>
+                    <a type="button" class="btn btn-outline-warning" href="index.php">Login</a>
                   </div>
 
                 </form>

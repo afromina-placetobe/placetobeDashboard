@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Place to be Dashboard</title>
+        <title></title>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,13 +16,13 @@
     <div class="col-sm-8 ">
     <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Happening</button>
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Happening <span class="badge bg-primary"> 3</span></button>
   </li>
   <li class="nav-item" role="presentation">
-    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Upcoming</button>
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Upcoming <span class="badge bg-primary"> 4</span></button>
   </li>
   <li class="nav-item" role="presentation">
-    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">This week Events</button>
+    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">This week Events <span class="badge bg-primary"> 10</span></button>
   </li>
  </ul>
 
@@ -33,11 +33,11 @@
   <table class="table align-middle mb-0 bg-white">
   <thead class="bg-light">
     <tr>
-      <th>Event Name</th>
-      <th>Start Date</th>
-      <th>End Date</th>
-      <th>Status</th>
-      <th>Edit</th>
+      <th class="text-warning">Event Name</th>
+      <th class="text-warning">Start Date</th>
+      <th class="text-warning">End Date</th>
+      <th class="text-warning">Status</th>
+      <th class="text-warning">Edit</th>
     </tr>
   </thead>
   <tbody>
@@ -45,7 +45,7 @@
       <td>
         <div class="d-flex align-items-center">
           <div class="ms-3">
-            <p class="fw-bold mb-1">Hiing trip to wenchi</p>
+            <p class="mb-1">Hiing trip to wenchi</p>
           </div>
         </div>
       </td>
@@ -71,7 +71,7 @@
       <td>
         <div class="d-flex align-items-center">
           <div class="ms-3">
-            <p class="fw-bold mb-1">Hiing trip to wenchi</p>
+            <p class="mb-1">Hiing trip to wenchi</p>
           </div>
         </div>
       </td>
@@ -97,7 +97,7 @@
       <td>
         <div class="d-flex align-items-center">
           <div class="ms-3">
-            <p class="fw-bold mb-1">Hiing trip to wenchi</p>
+            <p class="mb-1">Hiing trip to wenchi</p>
           </div>
         </div>
       </td>
@@ -127,11 +127,11 @@
   <table class="table align-middle mb-0 bg-white">
   <thead class="bg-light">
     <tr>
-      <th>Event Name</th>
-      <th>Start Date</th>
-      <th>End Date</th>
-      <th>Status</th>
-      <th>Edit</th>
+      <th class="text-warning">Event Name</th>
+      <th class="text-warning">Start Date</th>
+      <th class="text-warning">End Date</th>
+      <th class="text-warning">Status</th>
+      <th class="text-warning">Edit</th>
     </tr>
   </thead>
   <tbody>
@@ -139,7 +139,7 @@
       <td>
         <div class="d-flex align-items-center">
           <div class="ms-3">
-            <p class="fw-bold mb-1">Hiing trip to wenchi</p>
+            <p class="mb-1">Hiing trip to wenchi</p>
           </div>
         </div>
       </td>
@@ -165,7 +165,7 @@
       <td>
         <div class="d-flex align-items-center">
           <div class="ms-3">
-            <p class="fw-bold mb-1">Hiing trip to wenchi</p>
+            <p class="mb-1">Hiing trip to wenchi</p>
           </div>
         </div>
       </td>
@@ -194,11 +194,11 @@
   <table class="table align-middle mb-0 bg-white">
   <thead class="bg-light">
     <tr>
-      <th>Event Name</th>
-      <th>Start Date</th>
-      <th>End Date</th>
-      <th>Status</th>
-      <th>Edit</th>
+      <th class="text-warning">Event Name</th>
+      <th class="text-warning">Start Date</th>
+      <th class="text-warning">End Date</th>
+      <th class="text-warning">Status</th>
+      <th class="text-warning">Edit</th>
     </tr>
   </thead>
   <tbody>
@@ -206,7 +206,7 @@
       <td>
         <div class="d-flex align-items-center">
           <div class="ms-3">
-            <p class="fw-bold mb-1">Hiing trip to wenchi</p>
+            <p class="mb-1">Hiing trip to wenchi</p>
           </div>
         </div>
       </td>
@@ -268,7 +268,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <div class="container imgcontainer" >
+        <div class="container" id="imgcontainer" >
         <img src="./asset/popup.jpg" width="70%" height="70%"/>
         </div>
         <br/>
