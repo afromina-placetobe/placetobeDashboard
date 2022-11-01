@@ -55,17 +55,17 @@
 </nav>
 
 <!--left navigation bar-->
-<div class="row tab-pane tab-content" role="tabpanel" id="event">
+<div class="row tab-pane tab-content" role="tabpanel" >
 <div class="container ">
 <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
     <div class="position-sticky">
       <div class="list-group list-group-flush mx-3 mt-4">
       <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="event-tab" onClick="" data-bs-toggle="tab" data-bs-target="#event" type="button" role="tab" aria-controls="event" aria-selected="false">Events</button>
+    <button class="nav-link active" id="event-tab" onClick="events()" data-bs-toggle="tab" data-bs-target="#event" type="button" role="tab" aria-controls="event" aria-selected="false">Events</button>
   </li>
   <li class="nav-item" role="presentation">
-    <button class="nav-link" id="feedback-tab" onClick="" data-bs-toggle="tab" data-bs-target="#feedback" type="button" role="tab" aria-controls="feedback" aria-selected="false">Feedback</button>
+    <button class="nav-link" id="feedback-tab" onClick="feedback()" data-bs-toggle="tab" data-bs-target="#feedback" type="button" role="tab" aria-controls="feedback" aria-selected="false">Feedback</button>
   </li>
   <li class="nav-item" role="presentation">
     <button class="nav-link" id="gallery-tab" data-bs-toggle="tab" data-bs-target="#gallery" type="button" role="tab" aria-controls="gallery" aria-selected="false">Gallery</button>
@@ -88,9 +88,10 @@
 <!--the big close for page-->
 </div >
 <div id="hiddenElementContainer">
-<div class="tab-pane fade show active" id="event" role="tabpanel" aria-labelledby="event-tab">
-<div class="container ">
+<div class="tab-pane fade show active"  role="tabpanel" aria-labelledby="event-tab">
+<div class="container " id="event"> 
 <div class="row bg-info" >status counts</div>
+
 <?php 
 include('events.php');
 ?>
